@@ -5,11 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>קלנועיות Luria - למכירה</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* אייקון וואטסאפ */
+    .whatsapp-icon {
+      width: 1.3em;
+      height: 1.3em;
+      vertical-align: middle;
+      margin-left: 8px;
+      margin-bottom: 3px;
+    }
+    /* חוות דעת */
+    .testimonials {
+      background: #f8f8f8;
+      border-radius: 10px;
+      padding: 18px 16px 8px 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      text-align: right;
+    }
+    .testimonial {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+      color: #333;
+    }
+    .testimonial .author {
+      color: #25d366;
+      font-weight: bold;
+      font-size: 0.95em;
+      margin-right: 6px;
+    }
+    /* למה לבחור בנו */
+    .why-us {
+      background: #eafff2;
+      border-right: 5px solid #25d366;
+      border-radius: 10px;
+      padding: 18px 18px 10px 18px;
+      margin-bottom: 30px;
+      text-align: right;
+    }
+    .why-us ul {
+      margin: 0 0 0 18px;
+      padding: 0;
+      list-style: disc inside;
+    }
+    /* פוטר */
+    footer {
+      margin-top: 40px;
+      padding: 18px 0 0 0;
+      color: #888;
+      font-size: 0.98rem;
+      border-top: 1px solid #e0e0e0;
+      background: none;
+      text-align: center;
+    }
+    .footer-links {
+      margin-top: 6px;
+    }
+    .footer-links a {
+      color: #25d366;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: #128c4a;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
 
-    
     <!-- לוגו טקסטואלי -->
     <div class="logo-text">Luria</div>
 
@@ -18,6 +84,18 @@
     <h2 class="subtitle">הקלנועית המתקדמת והבטוחה מבית Luria</h2>
 
     <img src="images/img1.jpg" alt="קלנועית" class="product-image" />
+
+    <!-- למה לבחור בנו -->
+    <div class="why-us">
+      <h3>למה לבחור ב-Luria?</h3>
+      <ul>
+        <li>שירות אישי ומהיר עד הבית</li>
+        <li>אחריות מלאה ושקט נפשי</li>
+        <li>מפרט טכני עשיר ומתקדם</li>
+        <li>מחירים משתלמים במיוחד</li>
+        <li>מותג אמין עם מאות לקוחות מרוצים</li>
+      </ul>
+    </div>
 
     <p class="lead">
       קלנועית איכותית, בטיחותית ומפנקת – עם אחריות מלאה ושירות עד הבית!
@@ -54,9 +132,33 @@
       <li>אחריות למצברי ליתיום – שנתיים</li>
     </ul>
 
+    <!-- חוות דעת לקוחות -->
+    <div class="testimonials">
+      <div class="testimonial">
+        <span class="author">ורדה, כפר עזה:</span> "שירות מדהים, קלנועית איכותית ונוחה מאוד. ממליצה בחום!"
+      </div>
+      <div class="testimonial">
+        <span class="author">משה, חיפה:</span> "הגיעו עד הבית, הסבירו בסבלנות. חווית קנייה מצוינת."
+      </div>
+      <div class="testimonial">
+        <span class="author">דוד, ראשון לציון:</span> "הקלנועית של לוריא שינתה לי את איכות החיים!"
+      </div>
+    </div>
+
     <a href="https://wa.me/972505443447" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+      <svg class="whatsapp-icon" viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.236 6.385L4 29l7.828-2.049A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.97 0-3.85-.512-5.482-1.482l-.39-.232-4.646 1.217 1.24-4.522-.253-.397A9.956 9.956 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.29-7.709c-.29-.145-1.71-.844-1.974-.94-.264-.097-.456-.145-.648.145-.193.29-.744.94-.912 1.134-.168.193-.336.218-.626.073-.29-.145-1.225-.452-2.334-1.442-.862-.769-1.443-1.718-1.613-2.008-.168-.29-.018-.447.127-.592.13-.13.29-.336.435-.504.145-.168.193-.29.29-.483.097-.193.048-.363-.024-.508-.073-.145-.648-1.566-.888-2.146-.234-.563-.472-.486-.648-.495l-.553-.01c-.193 0-.508.073-.774.363-.266.29-1.016.994-1.016 2.425 0 1.431 1.04 2.813 1.186 3.008.145.193 2.048 3.13 4.963 4.267.694.299 1.234.478 1.656.612.696.222 1.33.191 1.83.116.558-.083 1.71-.698 1.953-1.372.241-.674.241-1.252.168-1.372-.073-.12-.266-.193-.556-.338z"/>
+      </svg>
       דברו איתנו בוואטסאפ
     </a>
   </div>
+
+  <footer>
+    <div>לוריא טכנולוגיות מתקדמות בע"מ &copy; 2025</div>
+    <div class="footer-links">
+      <a href="tel:0505443447">טלפון: 050-5443447</a> |
+      <a href="mailto:info@luria.co.il">info@luria.co.il</a>
+    </div>
+  </footer>
 </body>
 </html>
