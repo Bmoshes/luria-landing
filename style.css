@@ -56,7 +56,10 @@ h1 .brand {
 
 /* תמונת מוצר */
 .product-image {
-  width: 30%;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 40%;
+  max-width: 300px;
   height: auto;
   border-radius: 12px;
   margin-bottom: 25px;
